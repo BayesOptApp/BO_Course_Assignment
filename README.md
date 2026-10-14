@@ -109,3 +109,23 @@ print(f"Best objective: {best}")
 Practical problems are presented to the optimizer in `[-5, 5]^d`; the package maps these values to each problem's internal bounds. The logger writes experiment data under `Results-Practical/`. Select a valid dimension for other problems from the [Practical_Problems README](https://github.com/BayesOptApp/Practical_Problems#available-problems).
 
 Upload the generated IOH data to [IOHanalyzer](https://iohanalyzer.liacs.nl/) to inspect and compare experiment results.
+
+## Sample LLaMEA logs
+
+The [`sample_LLaMEA_logs/`](sample_LLaMEA_logs/) directory contains a sample LLaMEA run:
+
+```text
+sample_LLaMEA_logs/
+├── log.jsonl
+├── conversationlog.jsonl
+├── llamea_config.pkl
+└── code/
+    ├── try-0-Optimize_with_BO.py
+    ├── ...
+    └── try-20-Optimize_with_BO.py
+```
+
+- `log.jsonl` contains one JSON object per line, with a candidate's `id`, `name`, `description`, source `code`, `generation`, `fitness`, and associated run data such as `error`, `feedback`, `parent_ids`, `operator`, `metadata`, and `task_prompt`. This sample has 21 candidate records.
+- `conversationlog.jsonl` contains one JSON object per line with `role`, `time`, and `content`, recording client prompts and model responses. This sample has 42 entries.
+- `code/` contains the Python source saved for each candidate, numbered from `try-0` through `try-20`.
+- `llamea_config.pkl` is the serialized LLaMEA configuration for the run.
