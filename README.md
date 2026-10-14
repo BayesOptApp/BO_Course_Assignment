@@ -127,5 +127,5 @@ sample_LLaMEA_logs/
 
 - `log.jsonl` contains one JSON object per line, with a candidate's `id`, `name`, `description`, source `code`, `generation`, `fitness`, and associated run data such as `error`, `feedback`, `parent_ids`, `operator`, `metadata`, and `task_prompt`. This sample has 21 candidate records.
 - `conversationlog.jsonl` contains one JSON object per line with `role`, `time`, and `content`, recording client prompts and model responses. This sample has 42 entries.
-- `code/` contains the Python source saved for each candidate, numbered from `try-0` through `try-20`.
+- `code/` contains the Python source saved for each candidate, numbered from `try-0` through `try-n`, where `n` stands for the number of "LLaMEA evaluations" or the number of codebases generated in the loop.
 - `llamea_config.pkl` is the serialized LLaMEA configuration for the run.
