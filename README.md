@@ -110,6 +110,16 @@ Practical problems are presented to the optimizer in `[-5, 5]^d`; the package ma
 
 Upload the generated IOH data to [IOHanalyzer](https://iohanalyzer.liacs.nl/) to inspect and compare experiment results.
 
+# LLaMEA Setup and General information
+
+## Installation
+To install `LLaMEA` you have to have installed `SWIG`. After installing `SWIG`, then the package can be installed as:
+
+```
+  pip install llamea
+```
+
+For more information, check the main repository of the package: https://github.com/XAI-liacs/LLaMEA/tree/main.
 ## Sample LLaMEA logs
 
 The [`sample_LLaMEA_logs/`](sample_LLaMEA_logs/) directory contains a sample LLaMEA run:
@@ -129,3 +139,4 @@ sample_LLaMEA_logs/
 - `conversationlog.jsonl` contains one JSON object per line with `role`, `time`, and `content`, recording client prompts and model responses. This sample has 42 entries.
 - `code/` contains the Python source saved for each candidate, numbered from `try-0` through `try-n`, where `n` stands for the number of "LLaMEA evaluations" or the number of codebases generated in the loop.
 - `llamea_config.pkl` is the serialized LLaMEA configuration for the run.
+
