@@ -110,6 +110,23 @@ Practical problems are presented to the optimizer in `[-5, 5]^d`; the package ma
 
 Upload the generated IOH data to [IOHanalyzer](https://iohanalyzer.liacs.nl/) to inspect and compare experiment results.
 
+### Available Problems
+
+| ID   | Problem                            | Allowed dimensions |
+|------|------------------------------------|--------------------|
+| 1121 | Bench_Fun_Eps                      | 49 |
+| 1122 | Bench_Fun_Pitz                     | 10 |
+| 1123 | Circular_Antenna_Array             | 12 |
+| 1124 | Frequency_Modulated_Sound_Waves    | 6, 12, 24, 48 |
+| 1125 | Lennard_Jones_Potential            | 6, 12, 24, 48 |
+| 1126 | Spacecraft_Trajectory_OptimizationC1 | 26 |
+| 1127 | Spacecraft_Trajectory_OptimizationC2 | 22 |
+| 1128 | Spread_Spectrum_Radar              | 20 |
+| 1129 | Tersoff_PotentialC1                | 6, 12, 24, 48 |
+| 1130 | WindWake                           | 6, 12, 24, 48 |
+
+Requesting a dimensionality that is not allowed for a problem raises an `AttributeError`.
+
 # LLaMEA Setup and General information
 
 ## Installation
