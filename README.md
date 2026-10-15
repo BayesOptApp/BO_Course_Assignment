@@ -28,7 +28,7 @@ To use the practical-problem example, install the repository:
 python -m pip install "git+https://github.com/BayesOptApp/Practical_Problems.git"
 ```
 
-Installing `Practical_Problems` also installs IOH and its required dependencies. It currently pins `ioh<=0.3.22` and `FLORIS==2.5.2`. If you want to run both examples in one environment, use the practical-problem installation so the compatible IOH version is installed. The `Bench_Fun_Eps` and `Bench_Fun_Pitz` problems additionally require Docker or Podman; the example below does not.
+Installing `Practical_Problems` also installs IOH and its required dependencies. It currently pins `ioh<=0.3.22` and `FLORIS>=2.5.2`. If you want to run both examples in one environment, use the practical-problem installation so the compatible IOH version is installed. The `Bench_Fun_Eps` and `Bench_Fun_Pitz` problems additionally require Docker or Podman; the example below does not.
 
 ## BBOB problem
 
